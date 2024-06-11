@@ -26,7 +26,7 @@ const processOrderQueue = async (msg) => {
 
 
 const startConsumers = () => {
-  amqp.connect('amqp://localhost', (err, connection) => {
+  amqp.connect('amqps://obhqnbfp:SquwyL_S1ZqO-TSmKnmwobgRe3Nuy3mQ@puffin.rmq2.cloudamqp.com/obhqnbfp', (err, connection) => {
     if (err) {
       console.error('Failed to connect to RabbitMQ:', err.message);
       return;
