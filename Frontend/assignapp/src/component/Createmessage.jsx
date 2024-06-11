@@ -10,7 +10,7 @@ const SendMessageToCampaign = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/api/customerlog/send-message', {
+      const response = await fetch('https://minicrm.onrender.com/api/customerlog/send-message', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

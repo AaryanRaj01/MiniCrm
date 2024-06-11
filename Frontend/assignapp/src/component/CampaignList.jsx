@@ -12,7 +12,7 @@ const CampaignList = () => {
   useEffect(() => {
     const fetchCampaigns = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/fetchcustomerloglist/fetchcommunicationloglist');
+        const response = await fetch('https://minicrm.onrender.com/api/fetchcustomerloglist/fetchcommunicationloglist');
         if (!response.ok) {
           throw new Error('Failed to fetch campaigns');
         }

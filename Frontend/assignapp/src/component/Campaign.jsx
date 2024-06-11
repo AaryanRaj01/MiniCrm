@@ -17,7 +17,7 @@ const FetchCustomers = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/api/customerlog/fetch-customers', {
+      const response = await fetch('https://minicrm.onrender.com/api/customerlog/fetch-customers', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
